@@ -3,22 +3,6 @@ pragma solidity >=0.6.2 <0.8.0;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.0/contracts/token/ERC721/ERC721.sol";
 import "./ownedRanges.sol";
 
-library EnumerableRangeMap {
-    using EnumerableSet for EnumerableSet.UintSet;
-    using EnumerableMap for EnumerableMap.UintToAddressMap;
-    
-    struct Range {
-        uint256 start;
-        uint256 length;
-    }
-    
-    struct UintRangeMapSet {
-        mapping(uint256 => Range) ranges;
-        EnumerableSet.UintSet rangesSet;
-    }
-    
-}
-
 interface IERC2309 {
     
     event ConsecutiveTransfer(uint256 indexed fromTokenId, uint256 toTokenId, address indexed fromAddress, address indexed toAddress);
