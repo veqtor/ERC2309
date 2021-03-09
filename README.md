@@ -3,6 +3,7 @@ Experimental WARNING! ERC2309 prototype! Do not use in production!
 
 I take NO RESPONSIBILITY whatsover for lost funds of any kind if you use this code, this is ONLY meant as a demonstration of the carbon emission reduction possibilities of ERC2309
 
+# Notes on implementation
 
 Batch minting happens in init function for now, but could be a call that can add more NFTs in a batch, with a new owner of those NFTs, so you could have
 Alice mints 10k on init
